@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"></meta>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"></meta>
+    <meta content="ie=edge" http-equiv="X-UA-Compatible"></meta>
+    <title>css3阴影</title>
+    <style>
+    	*, :after, :before {
+		    box-sizing: border-box;
+		}
+    	body {
+		    display: flex;
+		    flex-direction: column;
+		    margin: 0;
+		    padding: 0;
+		    font-family: var(--font-body);
+		    font-weight: var(--font-weight-reg);
+		    line-height: 1.625;
+		    text-rendering: optimizeLegibility;
+		    -moz-osx-font-smoothing: grayscale;
+		    -webkit-font-smoothing: antialiased;
+		    overflow-x: hidden;
+		    min-height: 100vh;
+		}
+		.g-use-cases {
+		    padding-top: 128px;
+		    padding-bottom: 64px;
+		    width:384px;
+		    height: 486px;
+		    margin: 0 auto;
+		}
+    	.use-case {
+	    	background: #fff;
+	    	border: 1px solid #dcdde0;
+	    	border-radius: 3px;
+	    	color: inherit;
+	    	display: flex;
+	    	flex-direction: column;
+	    	justify-content: space-between;
+	    	transition: box-shadow .25s,transform .25s;
+	    	width: 100%;
+		}
+		.content {
+		    display: block;
+		    padding: 56px 32px 32px;
+		}
+		.use-case .text {
+		    padding: 0;
+		}
+		.use-case .text {
+		    text-align: center;
+		    width: 100%;
+		}
+		.text h3 {
+		    margin: 0 0 8px;
+		}
+
+		.use-case:hover {
+		    box-shadow: 0 16px 28px rgba(37,38,45,.12);
+		    transform: translateY(-4px);
+		}
+    </style>
+  </head>
+    <body>
+    	<div class="g-use-cases" data-testid="root">
+      	<a class="use-case" href="#">
+      		<div class="content">
+      			<div class="text">
+	      			<h3 class="title g-type-display-4" data-testid="title-Multi-Platform Service Mesh">Multi-Platform Service Mesh</h3>
+	      			<div class="description g-type-body" data-testid="description-Multi-Platform Service Mesh">
+	      				<p>Secure, modern application networking across any cloud or runtime.</p>
+					</div>
+				</div>
+      		</div>
+      	</a>
+      	</div>
+    </body>
+</html>
